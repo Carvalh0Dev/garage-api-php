@@ -15,32 +15,6 @@ O projeto utiliza a arquitetura **MVC** (Model-View-Controller) para separar as 
 
 ---
 
-## 📸 SCREENSHOTS
-
-### 🗄️ Modelagem de Dados (Database)
-A persistência de dados é gerenciada pelo MySQL. A tabela de usuários foi projetada com **UUID (CHAR 36)** para identificadores únicos, aumentando a segurança do sistema.
-
-![MySQL Workbench Schema](Garagem_final_database.png)
-> Estrutura das tabelas `usuarios` e `automovel` visualizada no MySQL Workbench.
-
-### 📂 Infraestrutura e Servidor
-Utilização do XAMPP para gerenciamento do ambiente local de desenvolvimento.
-
-![XAMPP Control Panel](projeto_garage_api_2.png)
-
----
-
-### 💻 Implementação do Backend (Código)
-O sistema utiliza Controllers robustos com tratamento de exceções e Models para abstração da camada de dados.
-
-
-
-![Controller Logic](Garagem_final.png)
-* **CRUD de Automóveis:** Implementado no arquivo `Automovel.php`.
-* **Persistência Segura:** Uso de blocos `try-catch` para capturar falhas na inserção e retornar status HTTP 500 em caso de erro.
-
----
-
 ### 🧪 Validação de Endpoints e Respostas
 Abaixo, a validação de uma requisição de leitura (GET) utilizando autenticação via **Bearer Token**.
 
